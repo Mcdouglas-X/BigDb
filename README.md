@@ -1,5 +1,17 @@
 
+
 **BigDb** is an example of how to exponentially increase a database of sequentially ordered public keys.
+
+
+
+## build
+
+On Windows, use WSL.
+
+```bash
+make
+```
+
 
 
 A database of sequential points is created and stored in a Bloom filter.
