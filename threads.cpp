@@ -71,7 +71,7 @@ void GSKM(Secp256K1& secp, int range, const std::string& filename, int numThread
     int stVal = lastEnd + 1;
     int endValue = lastEnd + range;
     int total = endValue - stVal + 1;
-    std::atomic<int> count = 0;
+    std::atomic<int> count{0};
     progress = 0;
     BloomFilter bloom(1000000, 7);
     if (fileExists(filename)) {
